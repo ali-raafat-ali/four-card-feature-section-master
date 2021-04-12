@@ -9,7 +9,8 @@
     --line-height: 1.7;
 }
 body{
-    margin: 0;
+    padding-top: 85px;
+    font-size: 15px;
 }
 
 /* Start media Query  */
@@ -40,12 +41,16 @@ body{
         width: 1370px;
     }
 }
+/* .main-section{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+} */
 .container{
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 60px !important;
 }
 /* start header */
 header .container{
@@ -55,23 +60,23 @@ header .container{
 }
 header .container .header-text {
     text-align: center;
-    padding-top: 40px;
-    width: 400px;
+    /* width: 400px; */
+    padding-bottom: 55px;
 }
 header .container p:first-of-type{
     color: hsl(234deg 12% 34% / 72%);
-    font-size: 28px;
-    padding-bottom: 10px
+    font-size: 37px;
+    padding-bottom: 30px;
 }
 header .container p:nth-of-type(2){
     color: hsl(234, 12%, 34%);
-    font-size: 29px;
+    font-size: 38px;
     font-weight: bold;
-    padding-bottom: 20px
+    padding-bottom: 40px;
 }
 header .container p:nth-of-type(3){
     color: hsl(229, 6%, 66%);
-    font-size: 12px;
+    /* font-size: 12px; */
     line-height: var(--line-height);
 }
 @media (max-width: 376px){
@@ -88,12 +93,12 @@ header .container p:nth-of-type(3){
 /* end header */
 /* start main section */
 .main-section .container{
+    padding: 10px;
     display: grid;
     grid-template-columns: repeat(3, 300px);
     grid-template-areas: ". card-two ." "card-one card-two card-four" "card-one card-three card-four" ". card-three .";
-    gap: 10px;
+    gap: 60px;
     justify-content: center;
-    padding: 40px;
 }
 @media (max-width: 376px){
     .main-section .container{
@@ -102,40 +107,22 @@ header .container p:nth-of-type(3){
 }
 .main-section .container .card{
     background-color: white;
+    padding: 30px;
     border-top-width: 3px;
     border-top-style: solid;
-    width: 280px;
+    width: 330px;
+    height: 235px;
     box-shadow: 0px 8px 13px 4px #0000ff17;
 }
 @media (max-width: 376px){
     .main-section .container .card{
         margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
-}
-.main-section .container .card-one{
-    border-top-color: hsl(180, 62%, 55%);
-    grid-area: card-one;
-}
-.main-section .container .card-two{
-    border-top-color: hsl(0, 78%, 62%);
-    grid-area: card-two;
-    margin-bottom: 10px;
-}
-@media (max-width: 376px){
-    .main-section .container .card-two{
-        margin-bottom: 20px;
-    }
-}
-.main-section .container .card-three{
-    border-top-color: hsl(34, 97%, 64%);
-    grid-area: card-three;
-}
-.main-section .container .card-four{
-    border-top-color: hsl(212, 86%, 64%);
-    grid-area: card-four;
 }
 .main-section .container .card .card-text{
-    padding: 20px 20px 30px 20px;
+    padding-bottom: 30px;
 }
 .main-section .container .card .card-text h2{
     font-size: 20px;
@@ -144,14 +131,35 @@ header .container p:nth-of-type(3){
 }
 .main-section .container .card .card-text p{
     color: hsl(229, 6%, 66%);
-    font-size: 12px;
     line-height: var(--line-height);
+}
+.main-section .container .card-one{
+    border-top-color: hsl(180, 62%, 55%);
+    grid-area: card-one;
+}
+.main-section .container .card-two{
+    border-top-color: hsl(0, 78%, 62%);
+    grid-area: card-two;
+}
+.main-section .container .card-three{
+    border-top-color: hsl(34, 97%, 64%);
+    grid-area: card-three;
+    margin-top: -30px;
+}
+@media (max-width: 376px){
+    .main-section .container .card-three{
+        margin-top: 0;
+    }
+}
+.main-section .container .card-four{
+    border-top-color: hsl(212, 86%, 64%);
+    grid-area: card-four;
 }
 .main-section .container .card .image{
     text-align: end;
-    padding: 20px;
 }
 .main-section .container .card .image img{
-    width: 50px;
+    width: 60px;
+    height: 60px;
 }
 /* end main section */
